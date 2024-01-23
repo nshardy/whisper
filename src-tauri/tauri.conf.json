@@ -11,11 +11,7 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false,
-      "shell": {
-        "all": false,
-        "open": true
-      }
+      "all": true
     },
     "bundle": {
       "active": true,
@@ -32,13 +28,16 @@
     "security": {
       "csp": null
     },
+    "macOSPrivateApi": true,
     "windows": [
       {
         "fullscreen": false,
         "resizable": true,
         "title": "whisper",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "transparent": true,
+        "decorations": true
       }
     ]
   }
